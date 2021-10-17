@@ -1,5 +1,6 @@
 // 01 - Com base em uma lista de 2 objetos - nome e idade -  
 //defina quem tem mais de 18 anos e pode ir ver o filme indicado
+//há opção de entrada manual e automatica
 
 let _clientList = [
 {name: "Angelina Jolie",age:80},
