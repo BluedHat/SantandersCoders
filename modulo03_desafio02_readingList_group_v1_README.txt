@@ -2,18 +2,22 @@
 
 //Integrantes do Grupo
 
-//Yan Matheus
-//Marisa Salles
-//Heloísa Bezerra
+//Yan Matheus     - GitHub - https://github.com/yanvr
+//Marisa Salles   - GitHub - 
+//Heloísa Bezerra - GitHub - https://github.com/BluedHat/
 
 ////////////////////////////// CÓDIGOS //////////////////////
 
-Links do GitHub aonde os arquivos foram disponibilizados o acesso as soluções propostas realizado a partir de qualquer um  dos links
+Link do GitHub aonde os arquivos foram disponibilizados o acesso as soluções propostas realizado a partir de qualquer um  dos links
 descritos a seguir.
 
-Solução 1 - https://github.com/BluedHat/SantandersCoders/ -  FileName: modulo03_desafio02_readingList_group_v1.js
-Solução 2 - https://github.com/yanvr/Desafio-BookList     -  FileName: 
-Solução 3 -                                               -  FileName:
+Local das Soluções apresentadas: https://github.com/BluedHat/SantandersCoders 
+
+Solução 1 -  -  FileName: modulo03_desafio02_readingList_group_v1.js
+Solução 2 -  -  FileName: modulo03_desafio02_readingList_group_v2.js
+
+
+README - modulo03_desafio02_readingList_group_v1_README.js
 
 ///////////////////////////  OBJETIVO ///////////////////// 
 
@@ -39,24 +43,21 @@ Com base nisto, propomos 3 soluções distintas para a criação do Booklist:
 
 Filename:  modulo03_desafio02_readingList_group_v1.js
 
-Objetivo -  Como a manobra não é interativa houve exploração do array para armazenamento 
-dos objetos e do console.table para retorno em tela
-
-
-//////////////////////////  DESCRIÇÃO SUCINTA DOS ITENS DA SOLUÇÃO 1 //////////
-
 Class Book - > Contém os parâmetros do Livros
 Class Booklist -> Contém os detalhes da Biblioteca
+
 Funções de BookList ->
 
 .addBook    - cria um novo livro (parâmetros possíveis (title, genre, author, read, *DateRead))
-DateRead    -  valor automatizado, gerado a partir do momento em que um livro é marcado como Lido
 .finished   - altera o status de um livro não finalizado para finalizado. 
 (parâmetros possíveis (title, genre, author, read, *DateRead))
 .BookObject - Apresenta as sugestões para ler e confirma os itens registrados como leitura em andamento.
 .searchByAuthor - Busca titulo pelo author na biblioteca geral
 .searchByGenre  - Busca titulo pelo author na biblioteca geral
-..searchByTitle - Busca titulo pelo author na biblioteca geral
+.searchByTitle - Busca titulo pelo author na biblioteca geral
+
+DateRead    -  valor automatizado, gerado a partir do momento em que um livro é marcado como Lido
+Parametros de leitura - not yet, reading ou read
 
 
 ///////////////////////// EXPLICAÇÃO DO FUNCIONAMENTO DA SOLUÇÃO 1 //////
@@ -75,17 +76,31 @@ DateRead    -  valor automatizado, gerado a partir do momento em que um livro é
 
 //////////////////// SOLUÇÃO 2 ////////////////////////////////////
 
-//////////////////////////  DESCRIÇÃO SUCINTA DOS ITENS DA SOLUÇÃO 2 //////////
+Filename:  modulo03_desafio02_readingList_group_v2.js
+
+Class Book - > Contém os parâmetros do Livros
+Class Booklist -> Contém os detalhes da Biblioteca
+
+Funções de BookList ->
+
+.listBooks - retorna todos os livros cadastrados
+.readBooks - retorna apenas os livros cadastrados como lidos
+.unreadBooks - retorna apenas os livros cadastrados como NÃO lidos
+.setCurrentBookToRead - permite ao usuário alterar um livro de não iniciado para Lendo
+.finishCurrentBook -  permite ao usuário marcar a leitura de um livro como encerrada
+.addBook - permite a inclusão de um novo livro
+.getBookBy -  permite a busca de um livro ja cadastrado por qualquer campo da classe book
+.getReadingSyggestions - retorna sugestões de leitura
+
+hasRead - valor automatizado, gerado a partir do momento em que um livro é marcado como Lido
 
 ///////////////////////// EXPLICAÇÃO DO FUNCIONAMENTO DA SOLUÇÃO 2 //////
 
-Objetivo - 
+1 - Booklist NÃO Extends Book
+2 - Existe apenas uma biblioteca com todos os livros cadastrados independente do status dos mesmos
+2 - A função .addBook possui o argumento de entrada hasRead que permite indicar se o livro já foi finalizado(legado)
+3 - A função finished atualiza os dados do livro incluindo a opção bookObject 
+4 - Todas as funções de interação ao ao não encontrarem os valores inseridos pelo usuário retornam alertas
 
-//////////////////// SOLUÇÃO 3 ////////////////////////////////////
 
-//////////////////////////  DESCRIÇÃO SUCINTA DOS ITENS DA SOLUÇÃO 3 //////////
-
-///////////////////////// EXPLICAÇÃO DO FUNCIONAMENTO DA SOLUÇÃO 3 //////
-
-Objetivo - 
 
