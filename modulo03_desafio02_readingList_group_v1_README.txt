@@ -13,7 +13,8 @@ Link do GitHub aonde os arquivos foram disponibilizados.
 Repositorio: https://github.com/BluedHat/SantandersCoders 
 
 Solução - FileName: modulo03_desafio02_readingList_group_v4.js
-README  - modulo03_desafio02_readingList_group_v4_README.js
+Readme  - FileName: modulo03_desafio02_readingList_group_v4_README.txt
+Samples para teste - FileName: modulo03_desafio02_readingList_group_v4_SAMPLES.js
 
 ///////////////////////////  OBJETIVO ///////////////////// 
 
