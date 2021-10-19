@@ -12,8 +12,8 @@ Link do GitHub aonde os arquivos foram disponibilizados.
 
 Repositorio: https://github.com/BluedHat/SantandersCoders 
 
-Solução 1 - FileName: modulo03_desafio02_readingList_group_v1.js
-README - modulo03_desafio02_readingList_group_v1_README.js
+Solução - FileName: modulo03_desafio02_readingList_group_v4.js
+README  - modulo03_desafio02_readingList_group_v4_README.js
 
 ///////////////////////////  OBJETIVO ///////////////////// 
 
@@ -35,7 +35,7 @@ Com base nisto, propomos a solução abaixo para a criação do Booklist:
 
 //////////////////// SOLUÇÃO ////////////////////////////////////
 
-Filename:  modulo03_desafio02_readingList_group_v1.js
+Filename:  modulo03_desafio02_readingList_group_v4.js
 
 Class Book - > Contém os parâmetros do Livros
 Class Booklist -> Contém os detalhes da Biblioteca
@@ -49,9 +49,13 @@ Funções de BookList ->
 .searchByAuthor - Busca titulo pelo author na biblioteca geral
 .searchByGenre  - Busca titulo pelo author na biblioteca geral
 .searchByTitle - Busca titulo pelo author na biblioteca geral
+.searchBy -  Busca título pelo parâmetro passado pelo usuário no formato (chave, valor)
+.statistics -  Retorna as estatisticas básicas da biblioteca em numeros(lidos, nao lidos e total)
+.getSuggestion - Retorna o primeiro livro cadastrados no não lido ainda na biblioteca
 
 DateRead    -  valor automatizado, gerado a partir do momento em que um livro é marcado como Lido
-Parametros de leitura - not yet, reading ou read
+
+Parametros de leitura - not yet, reading ou read. Qdo um livro novo é inserido, se o status de read não for colocado ele assume not yet
 
 
 ///////////////////////// VISÃO GERAL DA SOLUÇÃO //////
@@ -65,7 +69,13 @@ Parametros de leitura - not yet, reading ou read
     evitar possíveis erros a ação ação de remoção 
 4 - Ao manipular um livro(finalizar ou inserir) o usuário recebe retorno em tela sobre quantos livros existem, os status dos mesmos (Para Ler ou Lido)
     e ao final da inserção ou remoção dos livros o panorama geral das bibliotecas
-5 - A opção BookObjeto apresenta ao usuário sugestões para continuar lendo (todos os livros com status reading) e Os livros em que a leitura 
+5 - A opção BookObjeto apresenta ao usuário sugestões gerais para continuar lendo (todos os livros com status reading) e os livros em que a leitura 
     não foi iniciada.
+
+6 - A finalização de um livro só é aceita se todos os parâmetros do mesmo forem passados. Para evitar apagamento de homônimos.
+
+////////////////////////// SAMPLES ////////////////////////////////
+
+algumas samples foram disponibilizadas no arquivo modulo03_desafio02_readingList_group_v4_SAMPLES.js
 
 
