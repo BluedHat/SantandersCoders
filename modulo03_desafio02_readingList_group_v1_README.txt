@@ -14,9 +14,6 @@ descritos a seguir.
 Local das Soluções apresentadas: https://github.com/BluedHat/SantandersCoders 
 
 Solução 1 -  -  FileName: modulo03_desafio02_readingList_group_v1.js
-Solução 2 -  -  FileName: modulo03_desafio02_readingList_group_v2.js
-
-
 README - modulo03_desafio02_readingList_group_v1_README.js
 
 ///////////////////////////  OBJETIVO ///////////////////// 
@@ -35,7 +32,7 @@ o controle do que está sendo lido no momento, o que já foi lido e os possívei
 4 - Não ha menção sobre limitações no Booklist.
 5 - Itens adicionais serão bem vindos.
 
-Com base nisto, propomos 3 soluções distintas para a criação do Booklist:
+Com base nisto, propomos a solução abaixo para a criação do Booklist:
 
 ///////////////////// SOLUÇÕES ///////////////////////////////////
 
@@ -73,34 +70,5 @@ Parametros de leitura - not yet, reading ou read
     e ao final da inserção ou remoção dos livros o panorama geral das bibliotecas
 5 - A opção BookObjeto apresenta ao usuário sugestões para continuar lendo (todos os livros com status reading) e Os livros em que a leitura 
     não foi iniciada.
-
-//////////////////// SOLUÇÃO 2 ////////////////////////////////////
-
-Filename:  modulo03_desafio02_readingList_group_v2.js
-
-Class Book - > Contém os parâmetros do Livros
-Class Booklist -> Contém os detalhes da Biblioteca
-
-Funções de BookList ->
-
-.listBooks - retorna todos os livros cadastrados
-.readBooks - retorna apenas os livros cadastrados como lidos
-.unreadBooks - retorna apenas os livros cadastrados como NÃO lidos
-.setCurrentBookToRead - permite ao usuário alterar um livro de não iniciado para Lendo
-.finishCurrentBook -  permite ao usuário marcar a leitura de um livro como encerrada
-.addBook - permite a inclusão de um novo livro
-.getBookBy -  permite a busca de um livro ja cadastrado por qualquer campo da classe book
-.getReadingSyggestions - retorna sugestões de leitura
-
-hasRead - valor automatizado, gerado a partir do momento em que um livro é marcado como Lido
-
-///////////////////////// EXPLICAÇÃO DO FUNCIONAMENTO DA SOLUÇÃO 2 //////
-
-1 - Booklist NÃO Extends Book
-2 - Existe apenas uma biblioteca com todos os livros cadastrados independente do status dos mesmos
-2 - A função .addBook possui o argumento de entrada hasRead que permite indicar se o livro já foi finalizado(legado)
-3 - A função finished atualiza os dados do livro incluindo a opção bookObject 
-4 - Todas as funções de interação ao ao não encontrarem os valores inseridos pelo usuário retornam alertas
-
 
 
