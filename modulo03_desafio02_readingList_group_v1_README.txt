@@ -54,7 +54,7 @@ DateRead    -  valor automatizado, gerado a partir do momento em que um livro é
 Parametros de leitura - not yet, reading ou read
 
 
-///////////////////////// EXPLICAÇÃO DO FUNCIONAMENTO DA SOLUÇÃO 1 //////
+///////////////////////// VISÃO GERAL DA SOLUÇÃO //////
 
 1 - Booklist Extends Book
 2 - Foram criadas uma biblioteca geral, Library e 2 bibliotecas secundárias, Livros Lidos/Em leitura e Livros Não Lidos
