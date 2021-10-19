@@ -8,12 +8,11 @@
 
 ////////////////////////////// CÓDIGOS //////////////////////
 
-Link do GitHub aonde os arquivos foram disponibilizados o acesso as soluções propostas realizado a partir de qualquer um  dos links
-descritos a seguir.
+Link do GitHub aonde os arquivos foram disponibilizados.
 
-Local das Soluções apresentadas: https://github.com/BluedHat/SantandersCoders 
+Repositorio: https://github.com/BluedHat/SantandersCoders 
 
-Solução 1 -  -  FileName: modulo03_desafio02_readingList_group_v1.js
+Solução 1 - FileName: modulo03_desafio02_readingList_group_v1.js
 README - modulo03_desafio02_readingList_group_v1_README.js
 
 ///////////////////////////  OBJETIVO ///////////////////// 
@@ -34,9 +33,7 @@ o controle do que está sendo lido no momento, o que já foi lido e os possívei
 
 Com base nisto, propomos a solução abaixo para a criação do Booklist:
 
-///////////////////// SOLUÇÕES ///////////////////////////////////
-
-//////////////////// SOLUÇÃO 1 ////////////////////////////////////
+//////////////////// SOLUÇÃO ////////////////////////////////////
 
 Filename:  modulo03_desafio02_readingList_group_v1.js
 
@@ -48,7 +45,7 @@ Funções de BookList ->
 .addBook    - cria um novo livro (parâmetros possíveis (title, genre, author, read, *DateRead))
 .finished   - altera o status de um livro não finalizado para finalizado. 
 (parâmetros possíveis (title, genre, author, read, *DateRead))
-.BookObject - Apresenta as sugestões para ler e confirma os itens registrados como leitura em andamento.
+.BookObject - Apresenta as sugestões para ler, itens registrados como leitura em andamento e o ultimo item lido com base no cadastro existente.
 .searchByAuthor - Busca titulo pelo author na biblioteca geral
 .searchByGenre  - Busca titulo pelo author na biblioteca geral
 .searchByTitle - Busca titulo pelo author na biblioteca geral
